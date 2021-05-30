@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import sanitizeHtml from 'sanitize-html';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -22,6 +23,14 @@ const About = () => {
     }
   }, []);
 
+  const cleanHtml = (dirty) =>
+    sanitizeHtml(dirty, {
+      allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+      allowedAttributes: {
+        a: ['href', 'target', 'class'],
+      },
+    });
+
   return (
     <section id="about">
       <Container>
@@ -42,11 +51,17 @@ const About = () => {
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  <ul>
+                    {paragraphTwo &&
+                      paragraphTwo.map((item) => (
+                        // eslint-disable-next-line react/no-danger
+                        <li dangerouslySetInnerHTML={{ __html: cleanHtml(item) }} />
+                      ))}
+                  </ul>
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {/* eslint-disable-next-line react/no-danger */}
+                  <div dangerouslySetInnerHTML={{ __html: cleanHtml(paragraphThree || '') }} />
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">

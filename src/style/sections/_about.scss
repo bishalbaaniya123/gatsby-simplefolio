@@ -18,6 +18,14 @@
     clip-path: none;
   }
 
+  .para-link {
+    color: white;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
