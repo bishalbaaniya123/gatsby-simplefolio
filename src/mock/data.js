@@ -27,8 +27,8 @@ export const aboutData = {
     'Co-founder at <a href="https://dallotech.com" class="para-link" target="_blank">Dallo Tech Pvt. Ltd.</a>',
     'Currently Working at <a href="https://legalfit.com" class="para-link">Legalfit</a> via <a href="https://turing.com" class="para-link" target="_blank">Turing.com</a>',
   ],
-  paragraphThree:
-    'Watch my short Turing video <a href="https://youtu.be/lZvKxoyzN78" class="para-link" target="_blank">here</a>',
+  // paragraphThree:
+  //   'Watch my short Turing video <a href="https://youtu.be/lZvKxoyzN78" class="para-link" target="_blank">here</a>',
   resume: 'https://drive.google.com/file/d/1VZJPzTQ11FIbxwc3kJH0oo-SFgi85s1w/view?usp=sharing', // if no resume, the button will not show up
 };
 
