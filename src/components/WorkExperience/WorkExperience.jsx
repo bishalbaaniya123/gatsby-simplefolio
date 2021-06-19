@@ -4,10 +4,10 @@ import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
+import WorkExperienceImg from '../Image/WorkExperienceImg';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const WorkExperience = () => {
+  const { workExperience } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,12 +23,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects">
+    <section id="work-experience">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+          <Title title="Work Experience" />
+          {workExperience.map((company) => {
+            const { title, info, info2, url, years, img, id, position } = company;
 
             return (
               <Row key={id}>
@@ -41,7 +41,12 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                      <h3 className="project-wrapper__text-title">
+                        {title || 'Project Title'}
+                        <span className="ml-2">({years})</span>
+                        <br />
+                        <span>{position}</span>
+                      </h3>
                       <div>
                         <p>
                           {info ||
@@ -55,23 +60,12 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        See Live
+                        Visit Website <i className="fa fa-external-link" />
                       </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={8} sm={12} className="d-flex justify-content-center align-items-center">
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -100,7 +94,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            <WorkExperienceImg alt={title} filename={img} />
                           </div>
                         </Tilt>
                       </a>
@@ -116,4 +110,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default WorkExperience;

@@ -32,6 +32,50 @@ export const aboutData = {
   resume: 'https://drive.google.com/file/d/1VZJPzTQ11FIbxwc3kJH0oo-SFgi85s1w/view?usp=sharing', // if no resume, the button will not show up
 };
 
+// SKILLS DATA
+export const skillsData = [
+  {
+    title: 'Python/Django',
+    percent: 90,
+  },
+  {
+    title: 'VueJS',
+    percent: 90,
+  },
+  {
+    title: 'React',
+    percent: 80,
+  },
+  {
+    title: 'Test-Driven Dev',
+    percent: 75,
+  },
+  {
+    title: 'AI/ML',
+    percent: 70,
+  },
+  {
+    title: 'Cybersecurity',
+    percent: 60,
+  },
+  {
+    title: 'Data Science',
+    percent: 50,
+  },
+  {
+    title: 'Android',
+    percent: 50,
+  },
+  {
+    title: 'iOS',
+    percent: 50,
+  },
+  {
+    title: 'CI/CD',
+    percent: 50,
+  },
+];
+
 // EDUCATION DATA
 export const educationData = [
   {
@@ -59,43 +103,56 @@ export const educationData = [
   },
 ];
 
-// PROJECTS DATA
-export const projectsData = [
+// WORK EXPERIENCE DATA
+export const workExperienceData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'legalfit.png',
+    title: 'Legalfit',
+    years: 'Mar 2018 – Present',
+    position: 'Software Engineer',
+    info:
+      'A US-based company that specializes in building websites and providing data analytics services for attorneys in the US.',
+    url: 'https://legalfit.com',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'turing.png',
+    title: 'Turing.com',
+    years: 'Mar 2018 – Present',
+    info:
+      'Industry leading remote work matchmaking company that hires only the top 1% of the applicants.',
+    url: 'https://turing.com',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'dallotech.png',
+    title: 'Dallo Tech Pvt. Ltd.',
+    years: 'Nov 2018 – Mar 2020',
+    position: 'Sr. Frontend Developer / Cybersecurity and ML Consultant',
+    info:
+      'A Nepal-based company co-founded by Pulchowk Engineering Campus graduates\n' +
+      'with the central aim to make Nepal a digitally secure country.',
+    url: 'https://dallotech.com',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'infotmt.png',
+    title: 'InfoTMT Pvt. Ltd.',
+    years: 'Apr, 2018 - Apr, 2019',
+    position: 'Software Developer (ReactJS and NodeJS)',
+    info:
+      'InfoTMT is a US based technology company with an offshore development center providing advantage of working with highly experienced US solutions architects and agilists while reaping the cost benefits of an offshore software development team.',
+    url: 'https://infotmt.com',
+  },
+  {
+    id: nanoid(),
+    img: 'univhub.png',
+    title: 'Univhub',
+    years: 'Sep, 2016 - Nov, 2016',
+    position: 'Laravel and Django Frontend and Backend Developer',
+    info:
+      'Univhub is an online web application for abroad studies which allows you to search and apply from a list of over 7000 universities in USA and Australia.',
   },
 ];
 

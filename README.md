@@ -131,7 +131,7 @@ export const aboutData = {
 };
 ```
 
-### Projects Section
+### WorkExperience Section
 
 **_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
 
