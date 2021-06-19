@@ -53,3 +53,20 @@ a:hover {
     transform: translateX(2px);
   }
 }
+
+.education-accordion {
+  button {
+    padding-left: 0;
+    font-size: 16px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    &:not(:first-child) {
+      font-style: italic;
+    }
+  }
+}

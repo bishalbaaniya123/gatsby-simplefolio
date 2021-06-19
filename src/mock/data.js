@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
+  title: 'Bishal Baaniya | Software Engineer', // e.g: 'Name | Developer'
   lang: '', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
 };
@@ -25,12 +25,39 @@ export const aboutData = {
   paragraphTwo: [
     'Former Freelancer at <a href="https://upwork.com" class="para-link" target="_blank">Upwork</a> (Involvement in over 66 projects)',
     'Co-founder at <a href="https://dallotech.com" class="para-link" target="_blank">Dallo Tech Pvt. Ltd.</a>',
-    'Currently Working at <a href="https://turing.com" class="para-link" target="_blank">Turing.com</a>',
+    'Currently Working at <a href="https://legalfit.com" class="para-link">Legalfit</a> via <a href="https://turing.com" class="para-link" target="_blank">Turing.com</a>',
   ],
   paragraphThree:
     'Watch my short Turing video <a href="https://youtu.be/lZvKxoyzN78" class="para-link" target="_blank">here</a>',
   resume: 'https://drive.google.com/file/d/1VZJPzTQ11FIbxwc3kJH0oo-SFgi85s1w/view?usp=sharing', // if no resume, the button will not show up
 };
+
+// EDUCATION DATA
+export const educationData = [
+  {
+    id: nanoid(),
+    title: 'IOE, Pulchowk Engineering Campus',
+    years: '2014-2018',
+    descArr: [
+      'Established in 1972 A.D. (2029 B.S), it is one of the best and the most reputed engineering institution in Nepal.',
+      'Minor Project: Shoppify, an e-commerce website for peer to peer clothes renting with the application of Artificial intelligence in searching for similar clothes',
+      'Major Project: Network Intrusion Detection system using machine learning',
+      'Aggregate Percent: 71.62%',
+    ],
+  },
+  {
+    id: nanoid(),
+    title: "St. Xavier's College, Maitighar",
+    years: '2010-2012',
+    descArr: [
+      "One of the most recognized education institutions in the world, St. Xavier's has been providing quality education in Nepal since 1988 A.D.",
+      'Percentage Summary:',
+      'Grade 11: 80.2%',
+      'Grade 12: 80.4%',
+      'Aggregate Percent: 80.3%',
+    ],
+  },
+];
 
 // PROJECTS DATA
 export const projectsData = [
@@ -74,9 +101,9 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
+  cta: 'Would you like to chat with me? Awesome!',
   btn: '',
-  email: '',
+  email: 'bishalbaaniya@gmail.com',
 };
 
 // FOOTER DATA
@@ -84,8 +111,8 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/bishalbaaniya',
+      name: 'facebook',
+      url: 'https://facebook.com/bishalbaaniya',
     },
     {
       id: nanoid(),

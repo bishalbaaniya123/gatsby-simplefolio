@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import sanitizeHtml from 'sanitize-html';
+import { nanoid } from 'nanoid';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -54,15 +55,19 @@ const About = () => {
                   <ul>
                     {paragraphTwo &&
                       paragraphTwo.map((item) => (
-                        // eslint-disable-next-line react/no-danger
-                        <li dangerouslySetInnerHTML={{ __html: cleanHtml(item) }} />
+                        <li
+                          key={nanoid()}
+                          className="text-left"
+                          // eslint-disable-next-line react/no-danger
+                          dangerouslySetInnerHTML={{ __html: cleanHtml(item) }}
+                        />
                       ))}
                   </ul>
                 </p>
-                <p className="about-wrapper__info-text">
+                <div className="about-wrapper__info-text">
                   {/* eslint-disable-next-line react/no-danger */}
-                  <div dangerouslySetInnerHTML={{ __html: cleanHtml(paragraphThree || '') }} />
-                </p>
+                  <p dangerouslySetInnerHTML={{ __html: cleanHtml(paragraphThree || '') }} />
+                </div>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
