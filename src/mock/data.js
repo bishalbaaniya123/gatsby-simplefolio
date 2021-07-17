@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne:
     'Out-of-the-box thinker and research-oriented Computer Scientist/Engineer with extensive ' +
     'software development experience. Test-Driven Development (TDD) evangelist. Ultimate ' +
-    'aim to revolutionize the tech industry in Nepal in the area of Cybersecurity and AI.',
+    'aim to revolutionize the tech industry in Nepal in the area of Cultural Revitalization using IT.',
   paragraphTwo: [
     'Former Freelancer at <a href="https://upwork.com" class="para-link" target="_blank">Upwork</a> (Involvement in over 66 projects)',
     'Co-founder at <a href="https://dallotech.com" class="para-link" target="_blank">Dallo Tech Pvt. Ltd.</a>',
@@ -29,7 +29,8 @@ export const aboutData = {
   ],
   // paragraphThree:
   //   'Watch my short Turing video <a href="https://youtu.be/lZvKxoyzN78" class="para-link" target="_blank">here</a>',
-  resume: 'https://drive.google.com/file/d/1VZJPzTQ11FIbxwc3kJH0oo-SFgi85s1w/view?usp=sharing', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
+  // resume: 'https://drive.google.com/file/d/1VZJPzTQ11FIbxwc3kJH0oo-SFgi85s1w/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // SKILLS DATA
