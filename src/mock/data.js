@@ -52,15 +52,15 @@ export const skillsData = [
     percent: 75,
   },
   {
-    title: 'AI/ML',
+    title: 'Natural Language Processing (NLP)',
     percent: 70,
   },
   {
-    title: 'Cybersecurity',
+    title: 'Database Management',
     percent: 60,
   },
   {
-    title: 'Data Science',
+    title: 'React Native',
     percent: 50,
   },
   {
