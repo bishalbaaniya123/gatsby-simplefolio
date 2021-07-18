@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne:
     'Out-of-the-box thinker and research-oriented Computer Scientist/Engineer with extensive ' +
     'software development experience. Test-Driven Development (TDD) evangelist. Ultimate ' +
-    'aim to revolutionize the tech industry in Nepal using Computer Technology',
+    'aim to revolutionize the tech industry in Nepal using Computer Technology.',
   paragraphTwo: [
     'Former Freelancer at <a href="https://upwork.com" class="para-link" target="_blank">Upwork</a> (Involvement in over 66 projects)',
     'Co-founder at <a href="https://dallotech.com" class="para-link" target="_blank">Dallo Tech Pvt. Ltd.</a>',
